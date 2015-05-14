@@ -1,0 +1,37 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "mdi/scss/_variables.scss";
+@import "mdi/scss/_core.scss";
+@import "mdi/scss/_icons.scss";
+@import "mdi/scss/_path.scss";
+@import "mdi/scss/materialdesignicons.scss";
+/* @import "lumx/dist/scss/_lumx.scss"; */
+
+@import url(http://fonts.googleapis.com/css?family=Palanquin:100,200,300,400,500,600,700);
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+//MY VARS:
+$grey: #999;
+$dark: #444;
+$red: #F44336;
+$font: 'Palanquin', sans-serif;
+
+
+body, html {
+  background-color: $red;
+  font-family: $font;
+}
+
+.main-text{
+  color: white;
+}
+
+
