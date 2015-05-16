@@ -20,18 +20,59 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 //MY VARS:
 $grey: #999;
-$dark: #444;
+$dark: #666666;
 $red: #F44336;
+$indigo-blue: #7986CB;
+$light-blue: #90CAF9;
 $font: 'Palanquin', sans-serif;
 
 
 body, html {
-  background-color: $red;
+  background-color: $light-blue;
   font-family: $font;
+}
+
+.row{
+  margin-left:0;
+  margin-right:0;
+}
+
+.white-row{
+  background-color: white;
+  min-height: 230px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-text{
   color: white;
 }
+
+.white-row .main-text{
+  color: $dark;
+}
+
+.light-text{
+  font-weight: 100;
+}
+
+.normal-text{
+  font-weight: 500;
+}
+
+.bold-text{
+  font-weight: 700;
+}
+
+#more-info-button{
+  cursor: pointer;
+}
+
+#info-section.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
 
 
