@@ -23,7 +23,8 @@ $grey: #999;
 $dark: #666666;
 $red: #F44336;
 $indigo-blue: #7986CB;
-$light-blue: #90CAF9;
+$light-blue: #4DD0E1;
+$salmon: #FF5252;
 $font: 'Palanquin', sans-serif;
 
 
@@ -74,5 +75,22 @@ body, html {
   transition: all linear 0.5s;
 }
 
+.icon-salmon{
+  background-color: $salmon;
+  color: white;
+}
 
+.icon--flat.icon-salmon {
+  color: $salmon;
+  background-color: transparent;
+}
 
+.icon--xl.icon--circled {
+  font-size: 26px;
+  font-size: 3.625rem;
+}
+
+#social-icons-list a{
+  margin-right: 5px;
+  margin-left: 5px;
+}
