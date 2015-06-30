@@ -1,63 +1,33 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-
+// bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "bourbon/app/assets/stylesheets/_bourbon.scss";
-@import "mdi/scss/_variables.scss";
-@import "mdi/scss/_core.scss";
-@import "mdi/scss/_icons.scss";
-@import "mdi/scss/_path.scss";
-@import "mdi/scss/materialdesignicons.scss";
-/* @import "lumx/dist/scss/_lumx.scss"; */
+// endbower
 
-@import url(http://fonts.googleapis.com/css?family=Palanquin:100,200,300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Yantramanav:400,500,300,100,700,900);
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+
+$font-family-primary: 'Yantramanav', sans-serif;
+
+/* Colors */
+$primary-text-color: #666;
+$background-color: #ddd;
+
+body{
+  font-family: $font-family-primary;
+  color: $primary-text-color;
+  background-color: $background-color;
 }
 
-//MY VARS:
-$grey: #999;
-$dark: #666666;
-$red: #F44336;
-$indigo-blue: #7986CB;
-$light-blue: #4DD0E1;
-$salmon: #FF5252;
-$font: 'Palanquin', sans-serif;
 
-
-body, html {
-  background-color: $light-blue;
-  font-family: $font;
-}
-
-.row{
-  margin-left:0;
-  margin-right:0;
-}
-
-.white-row{
-  background-color: white;
-  min-height: 230px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.main-text{
-  color: white;
-}
-
-.white-row .main-text{
-  color: $dark;
-}
-
-.light-text{
+.thin-text{
   font-weight: 100;
 }
 
 .normal-text{
+  font-weight: 400;
+}
+
+.semi-bold-text{
   font-weight: 500;
 }
 
@@ -65,32 +35,19 @@ body, html {
   font-weight: 700;
 }
 
-#more-info-button{
-  cursor: pointer;
+.lg-text{
+  font-size: 30px;
 }
 
-#info-section.animate-show.ng-hide-add.ng-hide-add-active,
-.animate-show.ng-hide-remove.ng-hide-remove-active {
-  -webkit-transition: all linear 0.5s;
-  transition: all linear 0.5s;
+.md-text{
+  font-size: 20px;
 }
 
-.icon-salmon{
-  background-color: $salmon;
-  color: white;
+.sm-text{
+  font-size: 14px;
 }
 
-.icon--flat.icon-salmon {
-  color: $salmon;
-  background-color: transparent;
+.xs-text{
+  font-size: 12px;
 }
 
-.icon--xl.icon--circled {
-  font-size: 26px;
-  font-size: 3.625rem;
-}
-
-#social-icons-list a{
-  margin-right: 5px;
-  margin-left: 5px;
-}

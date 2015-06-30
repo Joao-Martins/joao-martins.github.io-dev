@@ -8,23 +8,13 @@
  *
  * Main module of the application.
  */
-angular
-  .module('joaoMartinsgithubioDevApp', [
+var app = angular.module('joaoMartinsgithubioDevApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
-    'ui.gravatar'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/home.html',
-        controller: 'HomeCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    'ngTouch'
+  ]
+);
+  
