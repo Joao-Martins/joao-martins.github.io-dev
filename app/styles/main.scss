@@ -39,9 +39,11 @@ body{
   font-weight: 800;
 }
 
+
 .xl-text{
   font-size: 72px;
 }
+
 .lg-text{
   font-size: 30px;
 }
@@ -93,4 +95,17 @@ a:hover{
   margin-right: auto;
   border: 3px solid;
   border-color: $dark;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .xl-text{
+    font-size: 32px;
+  }
+
+  .my-gravatar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
 }
