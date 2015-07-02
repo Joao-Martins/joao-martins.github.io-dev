@@ -3,14 +3,18 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import url(http://fonts.googleapis.com/css?family=Yantramanav:400,500,300,100,700,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 
-$font-family-primary: 'Yantramanav', sans-serif;
+$font-family-primary: 'Open Sans', sans-serif;
 
 /* Colors */
-$primary-text-color: #666;
-$background-color: #fff;
+$white: #fff;
+$dark: #303030;
+$bright-green: #00f3a5;
+
+$primary-text-color: $dark;
+$background-color: $white;
 
 body{
   font-family: $font-family-primary;
@@ -20,7 +24,7 @@ body{
 
 
 .thin-text{
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .normal-text{
@@ -28,13 +32,19 @@ body{
 }
 
 .semi-bold-text{
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .bold-text{
-  font-weight: 700;
+  font-weight: 800;
 }
 
+.xl-text{
+  font-size: 72px;
+}
+.lg-text{
+  font-size: 30px;
+}
 .lg-text{
   font-size: 30px;
 }
@@ -51,3 +61,36 @@ body{
   font-size: 12px;
 }
 
+.green-text{
+  color: $bright-green;
+}
+
+h1{
+  letter-spacing: -2px;
+}
+
+h2, h3, h4{
+  letter-spacing: -1px;
+}
+
+a{
+  color: $bright-green;
+}
+
+a:hover{
+  color: #999;
+  text-decoration: underline;
+}
+
+.my-gravatar{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.my-gravatar img{
+  border-radius: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid;
+  border-color: $dark;
+}

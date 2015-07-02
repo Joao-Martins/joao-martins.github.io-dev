@@ -14,7 +14,8 @@ var app = angular.module('joaoMartinsgithubioDevApp', [
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.gravatar'
   ]
 );
   
